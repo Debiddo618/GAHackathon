@@ -6,20 +6,17 @@ const cropSchema = new Schema({
     name: {
       type: String,
       required: true,
-      unique: true, 
     },
-    rainfall_range: {
-      type: [Number], // [min, max in mm]
+    rain_min: {
+      type: Number, 
       required: true, 
     },
-    growth_duration: {
-      type: Number, // Growth duration in days
+    rain_max: {
+      type: Number,
+      required: true, 
     },
-    optimal_season: {
-      type: String,
-      required: true, // e.g., 'Rainy', 'Summer', 'Winter'
-    },
-  }, { timestamps: true });
+  }, 
+  { timestamps: true });
   
   const Crop = mongoose.model('Crop', cropSchema);
   module.exports = Crop;
