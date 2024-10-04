@@ -1,4 +1,4 @@
-// seed.js // $node seed.js
+// seed.js // $node seed.js // 
 require('dotenv').config();
 require('./config/database');
 
