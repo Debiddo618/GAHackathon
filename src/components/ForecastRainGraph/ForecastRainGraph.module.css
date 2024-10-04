@@ -1,0 +1,10 @@
+.chartContainer {
+  width: 600px; /* Set the desired width here */
+  height: 400px; /* Set the desired height here */
+  margin: auto; /* Center the chart container */
+}
+
+.chart {
+  width: 100% !important;
+  height: 100% !important;
+}
